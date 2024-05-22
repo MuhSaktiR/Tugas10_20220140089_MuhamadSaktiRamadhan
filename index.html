@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pendaftaran Peminatan</h3>
+        </div>
+        <form action="">
+            <label for="nama">Nama</label>
+            <input type="text" placeholder="Nama Anda" id="nama">
+            
+            <label for="nim">NIM</label>
+            <input type="text" placeholder="NIM Anda" id="nim">
+            
+            <p>Peminatan pada Bidang:</p>
+            <div class="radio-group">
+                <label for="programming">
+                    <input type="radio" name="Peminatan" id="Programming" value="Programming">
+                    Programming
+                </label>
+                <label for="desain">
+                    <input type="radio" name="Peminatan" id="Desain" value="Desain">
+                    Desain
+                </label>
+                <label for="jaringan">
+                    <input type="radio" name="Peminatan" id="Jaringan" value="Jaringan">
+                    Jaringan
+                </label>
+                <label for="data">
+                    <input type="radio" name="Peminatan" id="Data" value="Data">
+                    Data
+                </label>
+            </div>
+            
+            <label for="angkatan">Angkatan</label>
+            <select name="angkatan" id="angkatan">
+                <option value="" disabled selected>Angkatan</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+            
+            <label for="tanggal">Tanggal</label>
+            <input type="text" placeholder="Tanggal Hari Ini" id="tanggal" readonly>
+            
+            <label for="alamat">Alamat</label>
+            <textarea placeholder="Tulis Alamat Anda Disini" name="alamat" id="alamat" cols="30" rows="5"></textarea>
+            
+            <button type="submit"  onclick="kirimData()">Kirim</button>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
